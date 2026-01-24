@@ -1,20 +1,11 @@
 import Image from 'next/image';
+import { logos } from '@/lib/logos';
 
 interface TrustedProps {
   dict?: {
     title: string;
   };
 }
-
-const logos = [
-  { name: 'Orascom Construction', src: '/logos/orascom-construction.svg' },
-  { name: 'Drake & Scull', src: '/logos/drake-scull.svg' },
-  { name: 'El-Orouba', src: '/logos/el-orouba.svg' },
-  { name: 'Siemens', src: '/logos/siemens.svg' },
-  { name: 'HNS Group', src: '/logos/hns-group.svg' },
-  { name: 'Petrojet', src: '/logos/petrojet.svg' },
-  { name: 'Alemam', src: '/logos/alemam.svg' },
-];
 
 export default function TrustedMarquee({ dict }: TrustedProps) {
   const title = dict?.title || "Trusted partnerships driving global infrastructure innovation";
@@ -37,11 +28,13 @@ export default function TrustedMarquee({ dict }: TrustedProps) {
           {[...Array(4)].map((_, setIndex) => (
             <div key={`set-${setIndex}`} className="flex items-center gap-16 px-8">
               {logos.map((logo, index) => (
-                <div key={`logo-${setIndex}-${index}`} className="relative h-12 w-48 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
+                <div key={`logo-${setIndex}-${index}`} className="relative h-12 w-48 transition-transform hover:scale-105">
                   <Image
                     src={logo.src}
                     alt={logo.name}
                     fill
+                    sizes="12rem"
+                    unoptimized
                     className="object-contain"
                   />
                 </div>

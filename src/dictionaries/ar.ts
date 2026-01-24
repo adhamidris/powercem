@@ -81,9 +81,9 @@ export const ar = {
   footer: {
     company: { title: "الشركة", links: ["عن الشركة", "المشاريع", "الأخبار", "اتصل بنا"] },
     products: { title: "منتجاتنا", links: ["RoadCem", "ImmoCem", "ConcreCem"] },
-    contact: { title: "اتصل بنا", address: "فيا روما 123، 00184 روما، إيطاليا", email: "info@powercem.it", phone: "+39 06 1234 5678" },
+    contact: { title: "اتصل بنا", address: "10 دبليو أبراج سما، الطريق الدائري، القاهرة، مصر", email: "info@powercem.me", phone: "01034819666" },
     follow: "تابعنا",
-    copyright: "© 2026 باور سيم للتكنولوجيا إيطاليا"
+    copyright: "© 2025 باور سيم للتكنولوجيا"
   },
   trusted: {
     title: "شراكات موثوقة لابتكار البنية التحتية العالمية"

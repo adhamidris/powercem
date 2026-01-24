@@ -81,9 +81,9 @@ export const fr = {
   footer: {
     company: { title: "Entreprise", links: ["À propos", "Projets", "Actualités", "Contact"] },
     products: { title: "Nos produits", links: ["RoadCem", "ImmoCem", "ConcreCem"] },
-    contact: { title: "Contact", address: "Via Roma 123, 00184 Roma, Italia", email: "info@powercem.it", phone: "+39 06 1234 5678" },
+    contact: { title: "Contact", address: "10w Sama towers., Ring road, Le Caire, Égypte.", email: "info@powercem.me", phone: "01034819666" },
     follow: "Suivez-nous",
-    copyright: "© 2026 PowerCem Technologies Italie"
+    copyright: "© 2025 PowerCem Technologies"
   },
   trusted: {
     title: "Des partenariats de confiance pour l'innovation des infrastructures mondiales"
