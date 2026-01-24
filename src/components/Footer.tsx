@@ -2,7 +2,25 @@ import React from 'react';
 import Link from 'next/link';
 import { Linkedin, Youtube } from 'lucide-react';
 
-const Footer = () => {
+interface FooterProps {
+  dict?: {
+    company: { title: string; links: string[] };
+    products: { title: string; links: string[] };
+    contact: { title: string; address: string; email: string; phone: string };
+    follow: string;
+    copyright: string;
+  };
+}
+
+const Footer = ({ dict }: FooterProps) => {
+  const t = dict || {
+    company: { title: "Company", links: ["About us", "Projects", "News and Blogs", "Contact"] },
+    products: { title: "Our products", links: ["RoadCem", "ImmoCem", "ConcreCem"] },
+    contact: { title: "Contact", address: "10w Sama towers., Ring road, Cairo, Egypt.", email: "info@powercem.me", phone: "01034819666" },
+    follow: "Follow us",
+    copyright: "© 2025 PowerCem Technologies"
+  };
+
   return (
     <footer className="bg-[#11141F] text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
@@ -10,46 +28,45 @@ const Footer = () => {
           {/* Company Column */}
           <div>
             <h3 className="text-xl font-medium mb-6 relative inline-block">
-              Company
+              {t.company.title}
               <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
             </h3>
             <ul className="space-y-4 text-gray-300">
-              <li><Link href="#" className="hover:text-power-blue transition-colors">About us</Link></li>
-              <li><Link href="#" className="hover:text-power-blue transition-colors">Projects</Link></li>
-              <li><Link href="#" className="hover:text-power-blue transition-colors">News and Blogs</Link></li>
-              <li><Link href="#" className="hover:text-power-blue transition-colors">Contact</Link></li>
+              {t.company.links.map((link, i) => (
+                <li key={i}><Link href="#" className="hover:text-power-blue transition-colors">{link}</Link></li>
+              ))}
             </ul>
           </div>
 
           {/* Our Products Column */}
           <div>
             <h3 className="text-xl font-medium mb-6 relative inline-block">
-              Our products
+              {t.products.title}
               <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
             </h3>
             <ul className="space-y-4 text-gray-300">
-              <li><Link href="#" className="hover:text-power-blue transition-colors">RoadCem</Link></li>
-              <li><Link href="#" className="hover:text-power-blue transition-colors">ImmoCem</Link></li>
-              <li><Link href="#" className="hover:text-power-blue transition-colors">ConcreCem</Link></li>
+              {t.products.links.map((link, i) => (
+                 <li key={i}><Link href="#" className="hover:text-power-blue transition-colors">{link}</Link></li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Column */}
           <div>
             <h3 className="text-xl font-medium mb-6 relative inline-block">
-              Contact
+              {t.contact.title}
               <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
             </h3>
             <ul className="space-y-4 text-gray-300">
-              <li>10w Sama towers., Ring road, Cairo, Egypt.</li>
+              <li>{t.contact.address}</li>
               <li>
-                 <a href="mailto:info@powercem.me" className="hover:text-power-blue transition-colors">
-                   info@powercem.me
+                 <a href={`mailto:${t.contact.email}`} className="hover:text-power-blue transition-colors">
+                   {t.contact.email}
                  </a>
               </li>
               <li>
-                 <a href="tel:01034819666" className="hover:text-power-blue transition-colors">
-                   01034819666
+                 <a href={`tel:${t.contact.phone}`} className="hover:text-power-blue transition-colors">
+                   {t.contact.phone}
                  </a>
               </li>
             </ul>
@@ -61,7 +78,7 @@ const Footer = () => {
           {/* Follow Us */}
           <div className="flex flex-col items-center md:items-start gap-4">
              <h3 className="text-xl font-medium relative inline-block">
-              Follow us
+              {t.follow}
               <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
             </h3>
             <div className="flex gap-4">
@@ -74,12 +91,6 @@ const Footer = () => {
             </div>
           </div>
 
-           {/* Logo - Centered relative to the page or flexed to the right/center? 
-               Screenshot shows it somewhat centered. 
-               We'll center it in the flex container on mobile, and maybe center or align right on desktop?
-               Actually, in the screenshot, "Follow us" is on the left, and the logo is roughly in the middle. 
-               Let's try to center the logo.
-           */}
           <div className="flex items-center gap-3">
               {/* Globe Icon Construction */}
               <div className="relative w-10 h-10 border-2 border-white rounded-full flex items-center justify-center overflow-hidden">
@@ -94,16 +105,12 @@ const Footer = () => {
               </div>
           </div>
           
-          {/* Empty div for flex spacing if needed to push logo to center, but standard justify-between is fine for now. 
-              The screenshot shows Follow Us on left, Logo in center-ish, nothing on right. 
-              We can use grid or absolute positioning for perfect center, but flex is safer.
-          */}
            <div className="hidden md:block w-[100px]"></div> 
         </div>
 
         {/* Footer Bottom */}
         <div className="border-t border-white/10 pt-8 text-center text-sm text-gray-400">
-          © 2025 PowerCem Technologies
+          {t.copyright}
         </div>
       </div>
     </footer>
