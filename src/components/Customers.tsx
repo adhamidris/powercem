@@ -56,14 +56,14 @@ export default function Customers({ dict }: CustomersProps) {
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-[42px] font-medium text-[var(--color-power-dark)] leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-[42px] font-medium text-[var(--color-cemx-dark)] leading-tight">
             {title[0]}
             <br className="hidden md:block" />
             {title[1]}
             <br className="hidden md:block" />
             {title[2]}
           </h2>
-          <div className="w-24 h-1 bg-[var(--color-power-blue)] mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-[var(--color-cemx-blue)] mx-auto mt-6"></div>
         </div>
 
         {/* Stats Grid */}
@@ -74,7 +74,7 @@ export default function Customers({ dict }: CustomersProps) {
               className="bg-[#EEEEEE] rounded-[20px] p-8 text-center flex flex-col items-center justify-center min-h-[250px]"
             >
               <div className="mb-2">
-                <span className="text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[var(--color-power-blue)]">
+                <span className="text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[var(--color-cemx-blue)]">
                   {stat.value}
                 </span>
               </div>

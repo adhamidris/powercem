@@ -10,7 +10,7 @@ const MapSection = ({ dict }: MapProps) => {
   const continents = dict?.continents || {
     na: "North America",
     sa: "South America",
-    eu: "Europe - PowerCem HQ",
+    eu: "Europe - CemX HQ",
     af: "Africa",
     as: "Asia",
     au: "Australia"
@@ -40,7 +40,7 @@ const MapSection = ({ dict }: MapProps) => {
                 <circle cx="320" cy="280" r="8" className="continent-dot fill-[#1D4E89] stroke-white stroke-[3px] shadow-sm cursor-pointer transition-all duration-300 hover:scale-125" data-continent="South America">
                   <title>{continents.sa}</title>
                 </circle>
-                {/* Europe - PowerCem HQ */}
+                {/* Europe - CemX HQ */}
                 <g className="headquarters group cursor-pointer">
                   <circle cx="520" cy="100" r="15" className="fill-[#60A5FA] opacity-30 animate-pulse" />
                   <circle cx="520" cy="100" r="10" className="continent-dot fill-[#60A5FA] stroke-white stroke-[3px] shadow-md transition-all duration-300 group-hover:scale-125" data-continent="Europe">

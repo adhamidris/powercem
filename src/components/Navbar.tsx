@@ -58,13 +58,13 @@ export default function Navbar({ dict }: NavbarProps) {
       <div className="w-full flex items-center justify-between h-full">
         {/* Logo */}
         <Link href={currentLocale === 'en' ? '/' : `/${currentLocale}`} className="flex items-center gap-2">
-           <div className={`text-2xl font-bold tracking-tighter transition-colors ${isWhite ? 'text-power-blue' : 'text-white'}`}>
-             POWER<span className={isWhite ? 'text-power-dark' : 'text-white'}>CEM</span>
+           <div className={`text-2xl font-bold tracking-tighter transition-colors ${isWhite ? 'text-cemx-blue' : 'text-white'}`}>
+             Cem<span className={isWhite ? 'text-cemx-dark' : 'text-white'}>X</span>
            </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className={`hidden lg:flex items-center gap-8 font-medium text-[15px] transition-colors ${isWhite ? 'text-power-dark' : 'text-white'}`}>
+        <div className={`hidden lg:flex items-center gap-8 font-medium text-[15px] transition-colors ${isWhite ? 'text-cemx-dark' : 'text-white'}`}>
           <Link href="#" className="hover:opacity-80 transition-opacity">{t.whatWeDo}</Link>
           <div className="flex items-center gap-1 cursor-pointer hover:opacity-80 transition-opacity group relative">
              {t.products} <ChevronDown className="w-4 h-4" />
@@ -80,7 +80,7 @@ export default function Navbar({ dict }: NavbarProps) {
           <div className={`flex items-center gap-2 sm:gap-3 px-2 sm:px-4 py-1.5 rounded-full border transition-all ${
             isWhite ? 'border-gray-200 bg-gray-50 shadow-none' : 'border-white/20 bg-white shadow-sm'
           }`}>
-            <Globe className="w-3.5 h-3.5 text-power-blue" />
+            <Globe className="w-3.5 h-3.5 text-cemx-blue" />
             <div className="flex items-center gap-3 text-base">
               <Link 
                 href="/" 
@@ -116,15 +116,15 @@ export default function Navbar({ dict }: NavbarProps) {
             href="#" 
             className={`hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all ${
               isWhite 
-                ? 'bg-power-blue text-white hover:bg-opacity-90' 
-                : 'bg-white text-power-black hover:bg-gray-100'
+                ? 'bg-cemx-blue text-white hover:bg-opacity-90' 
+                : 'bg-white text-cemx-black hover:bg-gray-100'
             }`}
           >
             {t.contact}
             <MessageCircle className="w-4 h-4 fill-current" />
           </Link>
           
-          <button className={`lg:hidden p-2 ${isWhite ? 'text-power-dark' : 'text-white'}`}>
+          <button className={`lg:hidden p-2 ${isWhite ? 'text-cemx-dark' : 'text-white'}`}>
             <Menu className="w-6 h-6" />
           </button>
         </div>

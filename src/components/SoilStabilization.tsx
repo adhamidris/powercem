@@ -15,7 +15,7 @@ export default function SoilStabilization({ dict }: SoilProps) {
   };
 
   return (
-    <section className="w-full bg-[var(--color-power-black)] -mt-16 pt-32 pb-32 relative z-0">
+    <section className="w-full bg-[var(--color-cemx-black)] -mt-16 pt-32 pb-32 relative z-0">
       <div className="max-w-[1200px] mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between w-full gap-8 text-left">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-2xl">
@@ -27,7 +27,7 @@ export default function SoilStabilization({ dict }: SoilProps) {
           <div className="shrink-0">
             <Link
               href="#"
-              className="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-white text-[var(--color-power-black)] font-semibold text-sm tracking-wide shadow-sm hover:shadow-md hover:bg-gray-100 transition-all"
+              className="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-white text-[var(--color-cemx-black)] font-semibold text-sm tracking-wide shadow-sm hover:shadow-md hover:bg-gray-100 transition-all"
             >
               {t.cta}
               <span className="p-1 rounded-full border border-current">

@@ -10,9 +10,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-poppins), sans-serif;
   
-  --color-power-blue: rgb(0 88 163);
-  --color-power-dark: rgb(44 44 46);
-  --color-power-black: rgb(17 20 31);
+  --color-cemx-blue: rgb(0 88 163);
+  --color-cemx-dark: rgb(44 44 46);
+  --color-cemx-black: rgb(17 20 31);
 }
 
 @keyframes marquee {

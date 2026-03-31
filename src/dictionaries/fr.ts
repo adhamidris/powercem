@@ -33,8 +33,8 @@ export const fr = {
     cta: "Ce que nous faisons"
   },
   about: {
-    title: ["Nous sommes PowerCem", "Italie"],
-    p1: "PowerCem Technologies est un leader mondial dans le domaine de la modification in situ des matériaux et de la stabilisation des sols. Nous fournissons des solutions durables et innovantes pour les secteurs de la construction et des infrastructures.",
+    title: ["Nous sommes CemX", "Italie"],
+    p1: "CemX Technologies est un leader mondial dans le domaine de la modification in situ des matériaux et de la stabilisation des sols. Nous fournissons des solutions durables et innovantes pour les secteurs de la construction et des infrastructures.",
     p2: "Notre mission est de réduire l'empreinte carbone de la construction tout en améliorant la qualité et la longévité des routes et des structures. Avec notre branche italienne, nous apportons cette expertise au cœur de la Méditerranée."
   },
   products: {
@@ -59,7 +59,7 @@ export const fr = {
   },
   collaboration: {
     title: "Collaboration mondiale, impact local",
-    p1: "PowerCem Technologies collabore mondialement avec un réseau de partenaires de confiance. Ces représentants locaux jouent un rôle crucial dans le soutien de nos solutions innovantes sur leurs marchés.",
+    p1: "CemX Technologies collabore mondialement avec un réseau de partenaires de confiance. Ces représentants locaux jouent un rôle crucial dans le soutien de nos solutions innovantes sur leurs marchés.",
     p2: "Nous accueillons de nouveaux partenariats avec des organisations qui partagent notre engagement envers l'innovation et la durabilité, nous aidant à étendre l'impact de nos produits dans le monde entier.",
     cta: "LIRE PLUS",
     contactCard: {
@@ -72,7 +72,7 @@ export const fr = {
     continents: {
       na: "Amérique du Nord",
       sa: "Amérique du Sud",
-      eu: "Europe - Siège PowerCem",
+      eu: "Europe - Siège CemX",
       af: "Afrique",
       as: "Asie",
       au: "Australie"
@@ -81,9 +81,9 @@ export const fr = {
   footer: {
     company: { title: "Entreprise", links: ["À propos", "Projets", "Actualités", "Contact"] },
     products: { title: "Nos produits", links: ["RoadCem", "ImmoCem", "ConcreCem"] },
-    contact: { title: "Contact", address: "10w Sama towers., Ring road, Le Caire, Égypte.", email: "info@powercem.me", phone: "01034819666" },
+    contact: { title: "Contact", address: "456 avenue Exemple, quartier Démo, Ville Test", email: "bonjour@cemx.example", phone: "+33 1 23 45 67 89" },
     follow: "Suivez-nous",
-    copyright: "© 2025 PowerCem Technologies"
+    copyright: "© 2025 CemX Technologies"
   },
   trusted: {
     title: "Des partenariats de confiance pour l'innovation des infrastructures mondiales"

@@ -93,7 +93,7 @@ export default function Hero({ dict }: HeroProps) {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-power-blue text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-blue-700 transition-colors"
+            className="bg-cemx-blue text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-blue-700 transition-colors"
           >
             {ctaText}
             <ArrowRight className="w-5 h-5" />
@@ -108,7 +108,7 @@ export default function Hero({ dict }: HeroProps) {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`h-3 rounded-full transition-all duration-300 ${
-              currentSlide === index ? "w-10 bg-power-blue" : "w-3 bg-white/50 hover:bg-white"
+              currentSlide === index ? "w-10 bg-cemx-blue" : "w-3 bg-white/50 hover:bg-white"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

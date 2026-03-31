@@ -16,9 +16,9 @@ const Footer = ({ dict }: FooterProps) => {
   const t = dict || {
     company: { title: "Company", links: ["About us", "Projects", "News and Blogs", "Contact"] },
     products: { title: "Our products", links: ["RoadCem", "ImmoCem", "ConcreCem"] },
-    contact: { title: "Contact", address: "10w Sama towers., Ring road, Cairo, Egypt.", email: "info@powercem.me", phone: "01034819666" },
+    contact: { title: "Contact", address: "456 Placeholder Avenue, Demo District, Sample City", email: "hello@cemx.example", phone: "+1 (555) 010-2468" },
     follow: "Follow us",
-    copyright: "© 2025 PowerCem Technologies"
+    copyright: "© 2025 CemX Technologies"
   };
 
   return (
@@ -29,11 +29,11 @@ const Footer = ({ dict }: FooterProps) => {
           <div>
             <h3 className="text-xl font-medium mb-6 relative inline-block">
               {t.company.title}
-              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
+              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-cemx-blue/50"></span>
             </h3>
             <ul className="space-y-4 text-gray-300">
               {t.company.links.map((link, i) => (
-                <li key={i}><Link href="#" className="hover:text-power-blue transition-colors">{link}</Link></li>
+                <li key={i}><Link href="#" className="hover:text-cemx-blue transition-colors">{link}</Link></li>
               ))}
             </ul>
           </div>
@@ -42,11 +42,11 @@ const Footer = ({ dict }: FooterProps) => {
           <div>
             <h3 className="text-xl font-medium mb-6 relative inline-block">
               {t.products.title}
-              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
+              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-cemx-blue/50"></span>
             </h3>
             <ul className="space-y-4 text-gray-300">
               {t.products.links.map((link, i) => (
-                 <li key={i}><Link href="#" className="hover:text-power-blue transition-colors">{link}</Link></li>
+                 <li key={i}><Link href="#" className="hover:text-cemx-blue transition-colors">{link}</Link></li>
               ))}
             </ul>
           </div>
@@ -55,17 +55,17 @@ const Footer = ({ dict }: FooterProps) => {
           <div>
             <h3 className="text-xl font-medium mb-6 relative inline-block">
               {t.contact.title}
-              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
+              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-cemx-blue/50"></span>
             </h3>
             <ul className="space-y-4 text-gray-300">
               <li>{t.contact.address}</li>
               <li>
-                 <a href={`mailto:${t.contact.email}`} className="hover:text-power-blue transition-colors">
+                 <a href={`mailto:${t.contact.email}`} className="hover:text-cemx-blue transition-colors">
                    {t.contact.email}
                  </a>
               </li>
               <li>
-                 <a href={`tel:${t.contact.phone}`} className="hover:text-power-blue transition-colors">
+                 <a href={`tel:${t.contact.phone}`} className="hover:text-cemx-blue transition-colors">
                    {t.contact.phone}
                  </a>
               </li>
@@ -79,13 +79,13 @@ const Footer = ({ dict }: FooterProps) => {
           <div className="flex flex-col items-center md:items-start gap-4">
              <h3 className="text-xl font-medium relative inline-block">
               {t.follow}
-              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-power-blue/50"></span>
+              <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-cemx-blue/50"></span>
             </h3>
             <div className="flex gap-4">
-              <Link href="#" className="hover:text-power-blue transition-colors bg-white/10 p-2 rounded hover:bg-white/20">
+              <Link href="#" className="hover:text-cemx-blue transition-colors bg-white/10 p-2 rounded hover:bg-white/20">
                 <Linkedin className="w-5 h-5" />
               </Link>
-              <Link href="#" className="hover:text-power-blue transition-colors bg-white/10 p-2 rounded hover:bg-white/20">
+              <Link href="#" className="hover:text-cemx-blue transition-colors bg-white/10 p-2 rounded hover:bg-white/20">
                 <Youtube className="w-5 h-5" />
               </Link>
             </div>
@@ -100,7 +100,7 @@ const Footer = ({ dict }: FooterProps) => {
                  <div className="absolute w-12 h-[1px] bg-white rotate-90 left-[18px]"></div>
               </div>
               <div className="flex flex-col">
-                  <span className="font-bold text-xl leading-none">PowerCem</span>
+                  <span className="font-bold text-xl leading-none">CemX</span>
                   <span className="text-sm font-light leading-none">Technologies</span>
               </div>
           </div>

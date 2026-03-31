@@ -52,7 +52,7 @@ export default function Products({ dict }: ProductsProps) {
               
               <Link
                 href={product.link}
-                className="flex items-center gap-3 px-8 py-3 rounded-full bg-white text-[var(--color-power-blue)] font-semibold text-sm tracking-wide shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:bg-[var(--color-power-blue)] group-hover:text-white"
+                className="flex items-center gap-3 px-8 py-3 rounded-full bg-white text-[var(--color-cemx-blue)] font-semibold text-sm tracking-wide shadow-sm hover:shadow-md transition-all border border-gray-100 group-hover:bg-[var(--color-cemx-blue)] group-hover:text-white"
               >
                 {ctaText}
                 <span className="p-1 rounded-full border border-current">

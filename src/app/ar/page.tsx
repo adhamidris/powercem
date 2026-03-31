@@ -18,7 +18,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "باور سيم إيطاليا",
+  title: "سيم إكس إيطاليا",
   description: "تثبيت التربة لمستقبل مستدام",
 };
 

@@ -1,8 +1,8 @@
-# Website Analysis Report: PowerCem Technologies
-**Target Website:** [https://powercem.me/](https://powercem.me/)
+# Website Analysis Report: CemX Technologies
+**Target Website:** [https://cemx.example/](https://cemx.example/)
 **Date:** January 23, 2026
 
-This report documents the structure, components, and design system of the PowerCem Technologies website to serve as a reference for the Next.js replication project.
+This report documents the structure, components, and design system of the CemX Technologies website to serve as a reference for the Next.js replication project.
 
 ## 1. Design System Overview
 
@@ -49,7 +49,7 @@ This report documents the structure, components, and design system of the PowerC
 **Screenshot:** `screenshots/about.png`
 - **Description:** Text-heavy section introducing the company.
 - **Elements:**
-  - Heading: "We are PowerCem Technologies".
+  - Heading: "We are CemX Technologies".
   - Two paragraphs of text describing the company history and mission.
 - **Layout:** Simple, clean typography focused layout.
 

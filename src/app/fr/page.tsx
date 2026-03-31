@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 import { fr } from "@/dictionaries/fr";
 
 export const metadata: Metadata = {
-  title: "PowerCem Italie",
+  title: "CemX Italie",
   description: "Stabilisation des sols pour un avenir durable",
 };
 

@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "PowerCem Technologies",
+  title: "CemX Technologies",
   description: "Soil Stabilization for a sustainable future",
 };
 
